@@ -1,0 +1,36 @@
+.TH INTERNSCTL 1 "January 2024"
+.SH NAME
+internsctl \- Custom Linux Command for Interns
+.SH SYNOPSIS
+.B internsctl
+[\fIOPTION\fR]
+.SH DESCRIPTION
+.B internsctl
+is a custom Linux command that provides various functionalities for interns.
+.PP
+Available options include:
+.TP
+\fB\-\-help\fR
+Display usage information.
+.TP
+\fB\-\-version\fR
+Display the command version.
+.PP
+.SH OPTIONS
+.TP
+\fB\-\-help\fR
+Display this help message.
+.TP
+\fB\-\-version\fR
+Display the version of internsctl.
+.PP
+.SH EXAMPLES
+Display the version of internsctl:
+.RS
+.B internsctl \-\-version
+.RE
+.PP
+.SH SEE ALSO
+.BR bash (1)
+.SH AUTHOR
+Khushi Mittal
