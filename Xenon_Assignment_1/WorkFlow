@@ -1,0 +1,50 @@
+steps:
+Define Constants:
+
+The script defines constants such as VERSION, MAN_PAGE, and help_message.
+Help Message Function:
+
+The help_message function displays the manual page for the tool using the man command.
+Main Function:
+
+The main function processes command-line arguments and executes the corresponding functionality based on the provided options and subcommands.
+Option Handling:
+
+The script uses a case statement to handle different options (-h, -v, -g, -r, cpu, memory, file).
+Option: -h or --help:
+
+Calls the help_message function to display the manual page.
+Option: -v or --version:
+
+Displays the version of the tool.
+Option: -g or --greet:
+
+Prints a greeting message for interns.
+Option: -r or --report:
+
+Displays a message about generating the intern report. Placeholder for additional logic.
+Option: cpu or memory:
+
+Subcommands for obtaining CPU or memory information.
+Option: file:
+
+Subcommands for obtaining information about a specified file.
+Check for Arguments:
+
+If no arguments are provided ($# -eq 0), the help_message function is called.
+Execute Main Function:
+
+If arguments are provided, the main function is called with the provided arguments.
+Subcommands under cpu and memory:
+
+The script supports the subcommand getinfo to fetch CPU or memory information using lscpu and free -m, respectively.
+Subcommands under file:
+
+The script supports the subcommand getinfo to obtain information about a specified file, such as size, permissions, owner, and last modified time.
+Error Handling:
+
+The script includes error messages for cases where an invalid option or subcommand is provided.
+Usage Instructions:
+
+Usage instructions are provided for invalid options or subcommands.
+To use the script, you can run it from the command line with various option
